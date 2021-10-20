@@ -44,8 +44,6 @@ def crop_notfl_img(img_arr, pixels):
         new_image = cropped_img[:-(shape[0] - 81), :]
     if shape[1] > 81:
         new_image = new_image[:, :-(shape[1] - 81)]
-    if pixels[0] == 930 and pixels[1] == 157: # [930, 157]:
-        plt.imshow(new_image)
         plt.show()
     #print(shape, new_image.shape)
     return new_image
